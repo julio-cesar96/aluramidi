@@ -54,19 +54,17 @@ h1 {
 .tecla {
     background-color: #fff;
     border-radius: 30px;
-    height: 120px;
-    width: 120px;
-    text-align: center;
-    line-height: 120px;
-
-    cursor: pointer;
-    color: #e93d50;
-    font-weight: bold;
-    font-size: 1.75em;
-
     box-shadow: 3px 3px 0 #aaa;
-}
+    color: #e93d50;
+    cursor: pointer;
+    height: 120px;
+    font-size: 1.75em;
+    font-weight: bold;
+    line-height: 120px;
+    text-align: center;
+    width: 120px;
 
+}
 
 .tecla:focus, .ativa {
     background-color: #e93d50;
