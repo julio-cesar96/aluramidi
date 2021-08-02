@@ -1,11 +1,8 @@
 :root {
     --larguraElemento: calc((120px *3) + 20px);
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    --cor-cinza: #aaa;
+    --cor-vermelho: #e93d50;
+    --cor-branca: #fff;
 }
 
 body {
@@ -20,8 +17,9 @@ body {
 }
 
 h1 {
-    color: #fff;
+    color: var(--cor-branca);
     margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 .teclado {
@@ -37,25 +35,25 @@ h1 {
 
 @keyframes botaoAtivo {
     0% {
-        background-color: #fff;
-        box-shadow: 3px 3px 0 #aaa;
+        background-color: var(--cor-branca);
+        box-shadow: 3px 3px 0 var(--cor-vermelho);
     }
     50% {
-        background-color: #e93d50;
-        box-shadow: 3px 3px 0 #aaa inset;
+        background-color: var(--cor-vermelho);
+        box-shadow: 3px 3px 0 var(--cor-cinza) inset;
     }
     100% {
-        background-color: #fff;
-        color: #e93d50;
-        box-shadow: 3px 3px 0 #aaa;
+        background-color: var(--cor-branca);
+        color: var(--cor-vermelho);
+        box-shadow: 3px 3px 0 var(--cor-cinza);
     }
 }
 
 .tecla {
-    background-color: #fff;
+    background-color: var(--cor-branca);
     border-radius: 30px;
-    box-shadow: 3px 3px 0 #aaa;
-    color: #e93d50;
+    box-shadow: 3px 3px 0 var(--cor-cinza);
+    color: var(--cor-vermelho);
     cursor: pointer;
     height: 120px;
     font-size: 1.75em;
@@ -67,8 +65,8 @@ h1 {
 }
 
 .tecla:focus, .ativa {
-    background-color: #e93d50;
-    color: #fff;
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branca);
     outline: none;
     animation: botaoAtivo 1s forwards;
 }

@@ -12,24 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="icon/bateria.png">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 
     <h1>Alura Midi</h1>
 
     <section class="teclado">
-        <div class="tecla tecla_q" role="button" tabindex="1">Pom</div>
-        <div class="tecla tecla_w" role="button" tabindex="2">Clap</div>
-        <div class="tecla tecla_e" role="button" tabindex="3">Tim</div>
+        <button class="tecla tecla_q">Pom</button>
+        <button class="tecla tecla_w">Clap</button>
+        <button class="tecla tecla_e">Tim</button>
 
-        <div class="tecla tecla_a" role="button" tabindex="4">Puff</div>
-        <div class="tecla tecla_s" role="button" tabindex="5">Splash</div>
-        <div class="tecla tecla_d" role="button" tabindex="6">Toim</div>
+        <button class="tecla tecla_a">Puff</button>
+        <button class="tecla tecla_s">Splash</button>
+        <button class="tecla tecla_d">Toim</button>
 
-        <div class="tecla tecla_z" role="button" tabindex="7">Psh</div>
-        <div class="tecla tecla_x" role="button" tabindex="8">Tic</div>
-        <div class="tecla tecla_c" role="button" tabindex="9">Tom</div>
+        <button class="tecla tecla_z">Psh</button>
+        <button class="tecla tecla_x">Tic</button>
+        <button class="tecla tecla_c">Tom</button>
     </section>
 
     <audio id="som_tecla_q" src="sounds/keyq.wav"></audio>
